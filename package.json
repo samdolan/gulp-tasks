@@ -1,0 +1,46 @@
+{
+  "name": "gulp-tasks",
+  "version": "0.0.1",
+  "description": "Collection of tools for processing less and react compilation.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/samdolan/gulp-tasks.git"
+  },
+  "author": {
+    "name": "Sam Dolan",
+    "email": "samdolan@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "browserify": "^5.9.1",
+    "envify": "~1.2.0",
+    "gulp": "^3.8.6",
+    "gulp-browserify": "^0.5.0",
+    "gulp-changed": "^0.4.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.3.4",
+    "gulp-help": "^0.1.11",
+    "gulp-less": "^1.3.2",
+    "gulp-notify": "^1.4.0",
+    "gulp-react": "^0.5.0",
+    "gulp-recess": "^0.3.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-sourcemaps": "^1.1.0",
+    "gulp-uglify": "^0.3.1",
+    "gulp-util": "^3.0.0",
+    "lodash": "^2.4.1",
+    "react": ">=0.11.0",
+    "reactify": "^0.14.0",
+    "vinyl-source-stream": "^0.1.1"
+  },
+  "keywords": [],
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/samdolan/gulp-tasks/issues"
+  },
+  "homepage": "https://github.com/samdolan/gulp-tasks",
+  "devDependencies": {
+    "gulp": "^3.8.7"
+  }
+}
