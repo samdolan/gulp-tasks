@@ -16,7 +16,6 @@ module.exports = function(gulp, option_overrides) {
     };
     var options = {}
     _.extend(options, defaults, option_overrides);
-    console.log(options);
 
     tasks.forEach(function(task) {
         require('./tasks/' + task)(gulp, options);

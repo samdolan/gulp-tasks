@@ -6,7 +6,8 @@ var rename = require('gulp-rename');
 var concat = require('gulp-concat');
 var source = require('vinyl-source-stream');
 var handleErrors = require('../util/handleErrors');
-
+var jshint = require('gulp-jshint');
+var stylish = require('jshint-stylish');
 
 module.exports = function(gulp, options) {
     var distDir = options.DIST_DIR + '/js/';
@@ -14,6 +15,10 @@ module.exports = function(gulp, options) {
     gulp.task('javascript', function() {
         return gulp.src(['js/**/*.js', 'js/app.js'])
             .pipe(react())
+            .on('error', handleErrors)
+            .pipe(jshint())
+            .pipe(jshint.reporter(stylish))
+            .pipe(jshint.reporter('fail'))
             .on('error', handleErrors)
             .pipe(gulp.dest(distDir));
     });
