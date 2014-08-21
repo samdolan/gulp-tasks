@@ -5,7 +5,7 @@ var handleErrors = require('../util/handleErrors');
 
 module.exports = function(gulp, options) {
     gulp.task('styles', function() {
-        return gulp.src('./less/app.less')
+        return gulp.src('./less/**/*')
         .pipe(sourcemaps.init())
         .pipe(less())
         .on('error', handleErrors)
