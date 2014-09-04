@@ -1,3 +1,3 @@
 module.exports = function(gulp, options) {
-    gulp.task('build', ['html', 'browserify', 'styles']);
+    gulp.task('build', ['html', 'browserify', 'styles', 'fonts']);
 };
